@@ -1,0 +1,21 @@
+10 LET R=RND(10)+1
+
+20 LET N=0
+
+21 N=N+1
+
+30 PRINT "Please enter a number(range 1- 10)."
+
+40 INPUT X
+
+50 IF X=R THEN PRINT "BINGO, YOU GOT IT!"
+
+60 IF X>R THEN PRINT "TOO HIGH"
+
+70 IF X<R THEN PRINT "TOO LOW"
+
+80 IF N<4 THEN IF X<>R GOTO 21
+
+81 IF N>=4 THEN IF X<>R PRINT "You fail!"
+
+90 END
